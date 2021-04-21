@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-color: rgb(95, 8, 37);
+    width: 100%;
+    height: 120px;
+    display: flex;
+    place-content: center;
+    place-items: center;
+}
+
+section {
+    background-color: rgb(8, 8, 8);
+    color:antiquewhite;
+    padding: 16px;
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 400%;
+    color: rgb(230, 120, 120);
+    letter-spacing: 8%;
+}
+
+h2, p {
+    text-align: center;
+} 
+
+h2 {
+    font-size: 40px;
+    letter-spacing: 6px;
+    font-family: 'Sacramento', cursive;
+    margin-top: auto;
+    cursor: pointer;
+}
+
+h2:hover {
+    color: rgb(230, 120, 120);
+}
+
+h3 {
+    font-family: 'Sacramento', cursive;
+    color:antiquewhite;
+    letter-spacing: 5px;
+    font-size: 35px;
+    margin-top: 65px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+section .main {
+    background-color: rgb(83, 9, 55);
+}
+
+.main img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.art-container img {
+    width: 100%;
+    height: 80%;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+section .art-one, .art-two {
+    background-color: rgb(95, 8, 37);
+    margin-top: auto;
+}   
+
+aside {
+    background-color: rgb(12, 1, 41);
+    padding: 15px 16px;
+    width: 120%;
+    text-align: center;
+}
+
+.others h3 {
+    margin-top: 0;
+}
+
+.others img {
+    width: 100%;
+}
+
+.others h3:hover {
+    color: rgb(230, 120, 120);
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    width: 100%;
+}
+
+form button {
+    margin: 10px auto;
+    cursor: pointer;
+    border: 2px solid rgb(63, 63, 173);
+    font-family: 'Sacramento', cursive;
+    font-size: 30px;
+}
+
+button:hover {
+    background-color: rgb(230, 120, 120);
+    border: 2px solid whitesmoke;
+}
+
+.content-wrapper {
+    display: flex;
+    width: 100%;
+}
+
+@media (max-width: 400px) {
+    aside {
+        display: none;
+    }
+}
+
+@media (min-width: 800px) {
+    .art-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .art-container article:first-of-type {
+        margin-right: 4rem;
+    }
+}
